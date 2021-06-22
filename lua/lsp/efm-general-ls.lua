@@ -1,7 +1,7 @@
 -- Example configuations here: https://github.com/mattn/efm-langserver
 -- TODO this file needs to be refactored eache lang should be it's own file
 -- python
-local python_arguments = {}
+local python_arguments = {prettier,eslint}
 
 -- TODO replace with path argument
 local flake8 = {

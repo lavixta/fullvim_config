@@ -22,8 +22,7 @@ require('lv-autopairs')
 require('lv-rnvimr')
 require('lv-which-key')
 require('lv-lsp-rooter')
-require('lv-zen')
-
+-- require('lv-zen')
 -- extras
 if O.extras then
     require('lv-numb')
@@ -37,7 +36,11 @@ end
 
 -- TODO is there a way to do this without vimscript
 vim.cmd('source '..CONFIG_PATH..'/vimscript/functions.vim')
-
+vim.api.nvim_command('nnoremap <silent>sf :NvimTreeToggle<CR>')
+vim.api.nvim_command('nnoremap <CR> :noh<CR><CR>')
+vim.api.nvim_command('inoremap jk <Esc>')
+vim.api.nvim_command('inoremap <C-j> <Left>')
+vim.api.nvim_command('inoremap <C-l> <Right>')
 -- LSP
 require('lsp')
 require('lsp.angular-ls')

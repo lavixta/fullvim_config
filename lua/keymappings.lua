@@ -19,7 +19,7 @@ vim.cmd([[
   inoremap <C-l> <C-\><C-N><C-w>l
   tnoremap <Esc> <C-\><C-n>
 ]])
-
+ 
 -- TODO fix this
 -- resize with arrows
 vim.api.nvim_set_keymap('n', '<C-Up>', ':resize -2<CR>', {silent = true})
@@ -32,9 +32,9 @@ vim.api.nvim_set_keymap('v', '<', '<gv', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('v', '>', '>gv', {noremap = true, silent = true})
 
 -- I hate escape
-vim.api.nvim_set_keymap('i', 'jk', '<ESC>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('i', 'kj', '<ESC>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('i', 'jj', '<ESC>', {noremap = true, silent = true})
+-- vim.api.nvim_set_keymap('i', 'jk', '<ESC>', {noremap = true, silent = true})
+-- vim.api.nvim_set_keymap('i', 'kj', '<ESC>', {noremap = true, silent = true})
+-- vim.api.nvim_set_keymap('i', 'jj', '<ESC>', {noremap = true, silent = true})
 
 -- Tab switch buffer
 vim.api.nvim_set_keymap('n', '<TAB>', ':bnext<CR>', {noremap = true, silent = true})
@@ -67,6 +67,7 @@ vim.cmd('vnoremap P "0P')
 
 -- Toggle the QuickFix window
 vim.api.nvim_set_keymap('', '<C-q>', ':call QuickFixToggle()<CR>', {noremap = true, silent = true})
+
 
 
 
